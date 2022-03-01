@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - A Pen by PressXFor</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+    <body>
+
+        <div>
+
+
+        <!-- partial:index.partial.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+            <object type="image/svg+xml" data="./assets/test-graphic.svg" id="svgtest" class="demo-svg">
+                test-graphic
+            </object>
+
+
+            <!-- partial -->
+            <script  src="./script.js"></script>
+        </div>
+
+    </body>
+</html>
