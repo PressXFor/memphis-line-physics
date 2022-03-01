@@ -1,0 +1,14 @@
+body, html{
+    margin:0
+}
+
+svg, g {
+    transform-origin: unset unset;
+}
+
+path, polyline {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    /*position: absolute;*/
+    /*display: block;*/
+}

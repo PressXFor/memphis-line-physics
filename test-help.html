@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="mySlider" type="range" min="1" max="100" value="1" step="1" onchange="resizeImage();" style="width:500px;">
+
+<div id="img-wrapper" style="width:200px; height:200px;">
+    <img src="assets/test-graphic.svg" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+    <img src="assets/test-graphic.svg" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+    <img src="assets/test-graphic.svg" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+    <img src="assets/test-graphic.svg" alt="My Image!" id="myImage" style="width:100%; height:1005;" />
+</div>
+
+</div>
+
+<script type="application/javascript">
+
+    function setImage() {
+        var e = document.getElementById('slider');
+        document.getElementsByTagName('img').src = e.options[e.selectedIndex].value;
+    }
+
+    function resizeImage() {
+        var image = document.getElementById('img-wrapper'),
+            ranger = document.getElementById('mySlider');
+        image.style.width = 200*(mySlider.value)+'px';
+    }
+
+</script>
+
+</body>
+</html>
